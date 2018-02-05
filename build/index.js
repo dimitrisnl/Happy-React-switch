@@ -16,10 +16,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Switch(_ref) {
   var active = _ref.active,
+      className = _ref.className,
       enabled = _ref.enabled,
-      small = _ref.small,
       _onClick = _ref.onClick,
-      className = _ref.className;
+      small = _ref.small;
 
   var classes = ['switch', className, active ? 'on ' : 'off', enabled ? '' : 'disabled '].join(' ');
 
