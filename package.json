@@ -1,16 +1,18 @@
 {
   "name": "happy-react-switch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple switch component in React",
-  "main": "index.js",
-  "module": "build/index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "babel lib -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "prepublish": "npm run build"
   },
-  "keywords": ["react", "switch"],
+  "keywords": [
+    "react",
+    "switch"
+  ],
   "author": "Dimitrios Lytras",
   "license": "MIT",
   "devDependencies": {
