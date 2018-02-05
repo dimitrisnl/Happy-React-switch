@@ -21,7 +21,7 @@ function Switch(_ref) {
       _onClick = _ref.onClick,
       small = _ref.small;
 
-  var classes = ['switch', className, active ? 'on ' : 'off', enabled ? '' : 'disabled '].join(' ');
+  var classes = ['happy-switch', className, active ? 'on ' : 'off', small ? 'small ' : '', enabled ? '' : 'disabled '].join(' ');
 
   return _react2.default.createElement(
     'div',
