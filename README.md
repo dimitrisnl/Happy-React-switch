@@ -1,4 +1,4 @@
-## Happy React Switch
+## Happy React Switch ![npm](https://img.shields.io/npm/dt/happy-react-switch.svg)
 
 A simple switch component in React
 
