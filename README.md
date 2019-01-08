@@ -16,7 +16,7 @@ Remember to include `happy-react-switch/style.css`. Otherwise you'll have to inc
 
 ### Demo
 
-[![Edit Happy react Toggle](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/m70x6z64vy)
+[![Edit Happy react Toggle](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/m70x6z64vy) [![Greenkeeper badge](https://badges.greenkeeper.io/dimitrisnl/Happy-React-switch.svg)](https://greenkeeper.io/)
 
 ### Options
 
