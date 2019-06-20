@@ -2,7 +2,7 @@
   "name": "happy-react-switch",
   "description": "A simple switch component in React",
   "homepage": "https://dimitrisnl.github.io/Happy-React-switch/",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "main": "build/index.js",
   "author": {
     "name": "Dimitrios Lytras"
