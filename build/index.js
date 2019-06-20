@@ -12,36 +12,39 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _styles = require('./styles');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Switch(_ref) {
-  var active = _ref.active,
-      className = _ref.className,
-      enabled = _ref.enabled,
+function HappySwitch(_ref) {
+  var disabled = _ref.disabled,
       _onClick = _ref.onClick,
+      on = _ref.on,
       small = _ref.small;
 
-  var classes = ['happy-switch', className, active ? 'on ' : 'off', small ? 'small ' : '', enabled ? '' : 'disabled '].join(' ');
-
   return _react2.default.createElement(
-    'div',
-    { className: classes, onClick: function onClick(e) {
-        return enabled ? _onClick(e) : null;
-      } },
-    _react2.default.createElement('div', { className: 'switch-toggle' })
+    _styles.Switch,
+    {
+      disabled: disabled,
+      on: on,
+      onClick: function onClick(e) {
+        return !disabled ? _onClick(e) : null;
+      },
+      small: small
+    },
+    _react2.default.createElement(_styles.Toggle, { on: on })
   );
 }
 
-Switch.propTypes = {
-  active: _propTypes2.default.bool.isRequired,
-  className: _propTypes2.default.string,
-  enabled: _propTypes2.default.bool,
+HappySwitch.propTypes = {
+  disabled: _propTypes2.default.bool,
+  on: _propTypes2.default.bool.isRequired,
   onClick: _propTypes2.default.func.isRequired,
   small: _propTypes2.default.bool
 };
-Switch.defaultProps = {
-  enabled: true,
-  className: ''
+
+HappySwitch.defaultProps = {
+  on: true
 };
 
-exports.default = Switch;
+exports.default = HappySwitch;

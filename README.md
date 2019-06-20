@@ -10,10 +10,6 @@ yarn add happy-react-switch
 npm i happy-react-switch
 ```
 
-### Caveats
-
-Remember to include `happy-react-switch/style.css`. Otherwise you'll have to include your own styles.
-
 ### Demo
 
 [![Edit Happy react Toggle](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/m70x6z64vy)
@@ -21,10 +17,9 @@ Remember to include `happy-react-switch/style.css`. Otherwise you'll have to inc
 ### Options
 
 ```
-Switch.propTypes = {
-  active: PropTypes.bool.isRequired,
-  className: PropTypes.string,
-  enabled: PropTypes.bool,
+HappySwitch.propTypes = {
+  on: PropTypes.bool.isRequired,
+  disabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
   small: PropTypes.bool,
 };
