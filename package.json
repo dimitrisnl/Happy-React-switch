@@ -7,11 +7,14 @@
     "build": "babel lib -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "keywords": [
     "react",
     "switch"
+  ],
+  "files": [
+    "build/"
   ],
   "author": "Dimitrios Lytras",
   "license": "MIT",
