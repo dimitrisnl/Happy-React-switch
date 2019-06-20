@@ -1,33 +1,23 @@
 {
   "name": "happy-react-switch",
   "description": "A simple switch component in React",
+  "homepage": "https://dimitrisnl.github.io/Happy-React-switch/",
   "version": "1.0.4",
   "main": "build/index.js",
   "author": {
     "name": "Dimitrios Lytras"
   },
-  "bugs": {
-    "url": "https://github.com/dimitrisnl/Happy-React-switch/issues"
-  },
-  "homepage": "https://dimitrisnl.github.io/Happy-React-switch/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dimitrisnl/Happy-React-switch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dimitrisnl/Happy-React-switch/issues"
   },
   "keywords": [
     "react",
     "switch"
   ],
-  "files": [
-    "build/"
-  ],
-  "scripts": {
-    "build": "babel lib -d build",
-    "lint": "eslint lib/**; exit 0",
-    "lint:watch": "esw -w lib/**",
-    "prepare": "npm run build"
-  },
-  "license": "MIT",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -45,5 +35,15 @@
     "eslint-plugin-react": "^7.13.0",
     "eslint-watch": "^3.1.5",
     "prop-types": "^15.7.2"
-  }
+  },
+  "files": [
+    "build/"
+  ],
+  "scripts": {
+    "build": "babel lib -d build",
+    "lint": "eslint lib/**; exit 0",
+    "lint:watch": "esw -w lib/**",
+    "prepublish": "npm run build"
+  },
+  "license": "MIT"
 }
